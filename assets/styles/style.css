@@ -162,11 +162,14 @@ body {
 
 .movie-list-wrapper {
   position: relative;
+  overflow: hidden;
 }
 .movie-list {
   display: flex;
   align-items: center;
   height: 300px;
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
 }
 .movie-list-item {
   margin-right: 30px;
@@ -188,8 +191,10 @@ body {
   width: 270px;
   height: 200px;
   object-fit: cover;
+  border-radius: 20px;
   transition: all 1s ease-in-out;
 }
+
 .movie-list-item-title {
   background-color: #333;
   padding: 0 10px;
