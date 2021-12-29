@@ -280,3 +280,11 @@ body {
   opacity: 1;
 }
 /* #endregion*/
+
+/* #region media queries*/
+@media screen and (max-width: 940px) {
+  .menu-container {
+    display: none;
+  }
+}
+/* #endregion*/
