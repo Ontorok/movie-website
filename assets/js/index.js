@@ -35,3 +35,12 @@ arrows.forEach((arrow, index) => {
     });
 });
 
+const toggleBall = document.querySelector('.toggle-ball');
+const items = document.querySelectorAll('.container,.movie-list-title,.navbar,.navbar-container,.sidebar,.sidebar-menu-icon,.toggle,.toggle-ball');
+
+toggleBall.addEventListener('click', () => {
+    items.forEach(item => {
+        item.classList.toggle('dark')
+    })
+})
+
